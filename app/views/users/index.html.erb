@@ -1,4 +1,7 @@
 <h2>AZ Blog Users</h2>
-<% @users.each do |user| %>
-  <h3><%= link_to user.username, user %></h3>
-<% end %>
+
+<div class="all-users">
+  <% @users.each do |user| %>
+    <h3><%= image_tag avatar_url(user) %> <%= link_to user.username, user %></h3>
+  <% end %>
+</div>

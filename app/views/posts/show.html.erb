@@ -1,7 +1,7 @@
-<div>
+<div class="post-container">
   <h1><%= @post.title %></h1>
   <h3><%= @post.description %></h3>
-  <p>By <%= @post.user.username %></p>
+  <p>By <%= @post.user.username %> | <%= @post.created_at.strftime("%B %d, %Y") %></p>
   <p><%= @post.content %></p>
 </div>
 
