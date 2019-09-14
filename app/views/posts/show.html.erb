@@ -5,6 +5,7 @@
   <p><%= @post.content %></p>
 </div>
 
+<br>
 <% if @post.user == current_user  %>
-  <button class="edit"><%= link_to 'Edit Post', edit_post_path(@post) %></button>
+  <%= link_to 'Edit Post', edit_post_path(@post), :class => 'submit-button' %>
 <% end %>

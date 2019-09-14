@@ -1,6 +1,6 @@
 <%= form_for [@user, @post] do |f| %>
-  <p><%= f.label :title %><br><%= f.text_field :title %></p>
-  <p><%= f.label :description %><br><%= f.text_field :description %></p>
-  <p><%= f.label :content %><br><%= f.text_area :content %></p>
-  <%= f.submit %>
+  <p><%= f.label :title %><br><br><%= f.text_field :title, :class => 'post-control' %></p>
+  <p><%= f.label :description %><br><br><%= f.text_field :description, :class => 'post-control' %></p>
+  <p><%= f.label :content %><br><br><%= f.text_area :content, :class => 'form-area' %></p>
+  <%= f.submit :class => 'submit-button' %>
 <% end %>

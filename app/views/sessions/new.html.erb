@@ -1,11 +1,9 @@
 <h2>Login</h2>
 <div class="login">
 <%= form_for @user, url: login_path do |f| %>
-  <%= f.label :id, "Username" %><br>
-  <%= f.collection_select :username, User.all, :username, :username %>
-  <br>
-  <br>
-  <%= f.label :password %><br><%= f.password_field :password %><br><br>
-  <%= f.submit "Log In" %>
+  <p><%= f.label :id, "Username" %><br>
+  <%= f.collection_select :username, User.order(:username), :username, :username, { include_blank: false}, { class: "form-control" } %></p>
+  <p><%= f.label :password %><br><%= f.password_field :password, :class => 'form-control' %></p>
+  <%= f.submit "Log In", :class => 'submit-button' %>
 <% end %>
 </div>

@@ -3,7 +3,7 @@
   <%= image_tag avatar_url(@user) %>
   <h1><%= @user.username %></h1>
   <h3><%= @user.posts.count %> Posts</h3>
-  
+
   <div class="info">
     <h4><%= @user.bio %></h4>
     <h4>Based in <%= @user.location %></h4>
@@ -11,7 +11,8 @@
   </div>
 
   <% if @user.id == current_user.id %>
-    <button class="edit"><%= link_to 'Edit Profile', edit_user_path(@user) %></button>
+    <br>
+    <%= link_to 'Edit Profile', edit_user_path(@user), :class => 'submit-button' %>
   <% end %>
 
   <h3><%= @user.username %>'s Posts</h3>
