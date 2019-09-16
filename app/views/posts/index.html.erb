@@ -1,15 +1,15 @@
 <h1>All Posts</h1>
-<table class="all-posts" width="50%">
+<table class="all-posts" id="all-posts" width="50%">
   <tr>
-    <th><h3>Post Title</h3></th>
-    <th><h3>Publish Date</h3></th>
-    <th><h3>Author</h3></th>
+    <th><h3><%= link_to "Post Title", :sort => "title" %></h3></th>
+    <th><h3><%= link_to "Author", :sort => "user_id" %></h3></th>
+    <th><h3><%= link_to "Publish Date", :sort => "created_at" %></h3></th>
   </tr>
   <% @posts.each do |post| %>
   <tr>
-    <td><%= link_to post.title, post%></td>
-    <td><%= post.created_at.strftime("%B %d, %Y") %></td>
+    <td><%= link_to post.title, post %></td>
     <td><%= post.user.username %></td>
+    <td><%= post.created_at.strftime("%B %d, %Y") %></td>
   </tr>
   <% end %>
 </table>

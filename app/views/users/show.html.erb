@@ -14,12 +14,12 @@
     <br>
     <%= link_to 'Edit Profile', edit_user_path(@user), :class => 'submit-button' %>
   <% end %>
-
-  <h3><%= @user.username %>'s Posts</h3>
-
-  <ol>
-    <% @user.posts.each do |post| %>
-      <li><%= link_to post.title, post_path(post) %></li>
-    <% end %>
-  </ol>
+  <div class="user-posts">
+    <h3><%= @user.username %>'s Posts</h3>
+    <ol>
+      <% @user.posts.each do |post| %>
+        <li><%= link_to post.title, post_path(post) %></li>
+      <% end %>
+    </ol>
+  </div>
 </div>

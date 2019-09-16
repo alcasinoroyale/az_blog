@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @posts = Post.order(params[:sort])
   end
 
   def new
