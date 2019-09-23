@@ -73,26 +73,42 @@ a {
   color: white;
 }
 
-/* Need to Edit */
-
-.profile {
+.create-user, .create-post, .login {
   margin-top: 20px;
+  width: 40%;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #404040;
 }
 
-.info {
-  line-height: 10px;
+.user-profile, .all-users, .post-container, .posts-index {
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #404040;
+  text-align: center;
 }
 
-.all-posts {
-  text-align: left;
+.all-users a {
+  color: #f0f0f0;
 }
 
-.all-posts th {
+.all-users h3 {
+  display: inline;
+  padding: 30px;
+}
+
+.all-posts td a{
+  color: #f0f0f0;
+}
+
+.all-posts th a{
   padding-left: 20px;
-}
-
-.post-container h3 {
-  color: #466580;
+  color: #00668f;
 }
 
 .form-control {
@@ -102,20 +118,16 @@ a {
 }
 
 .post-control {
-  width: 230px;
+  width: 250px;
   height: 28px;
   font-size: 16px;
 }
 
 .form-area {
   height: 100px;
-  width: 300px;
-  max-width: 300px;
+  width: 400px;
+  max-width: 400px;
   font-size: 14px;
-}
-
-.user-posts {
-  margin-top: 30px;
 }
 
 .submit-button {
@@ -127,4 +139,12 @@ a {
   font-size: 15px;
   height: 50px;
   width: 100px;
+}
+
+.user-posts {
+  margin-top: 30px;
+}
+
+.user-posts-list a {
+  color: #00668f;
 }

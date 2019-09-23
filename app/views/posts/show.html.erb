@@ -10,5 +10,13 @@
   <% if @post.user == current_user  %>
     <%= link_to 'Edit Post', edit_post_path(@post), :class => 'submit-button' %>
   <% end %>
+
+  <br><br>
+    <% @post.comments.each do |comment| %>
+      <%= comment.user.username %> commented <%= comment.body %> on
+      <%= comment.created_at.strftime("%B %d, %Y") %>
+    <% end %>
+  <% else %>
+  <h4>Login to see comments</h4>
 <% end %>
 </div>
