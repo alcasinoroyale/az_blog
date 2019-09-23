@@ -20,6 +20,10 @@ body {
   color: #f0f0f0;
 }
 
+.homepage {
+  margin-left: 30px;
+}
+
 .home_image {
   width: 700px;
   height: auto;
@@ -28,32 +32,48 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #000;
+  background-color: #1a1a1a;
+  height: 80px;
 }
 
 .navbar a {
-  float: left;
-  text-align: center;
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .home a {
   font-size: 40px;
+  color: #00668f;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.links {
-  float: right;
+.nav-links {
+  position: relative;
+  text-align: right;
+  margin-top: -30px;
 }
 
-.links a {
-  margin-top: 10px;
-  font-size: 18px;
+.nav-links a {
+  padding: 6px;
+  margin-right: 30px;
+  font-weight: bold;
 }
 
-a {
-  padding: 10px;
-  text-decoration: none;
-  color: #f5f5f5;
+.nav-links a:hover {
+  color: white;
 }
+
+/* Need to Edit */
 
 .profile {
   margin-top: 20px;

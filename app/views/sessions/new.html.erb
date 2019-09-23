@@ -1,5 +1,5 @@
-<h2>Login</h2>
 <div class="login">
+<h2>Login</h2>
 <%= form_for @user, url: login_path do |f| %>
   <p><%= f.label :id, "Username" %><br>
   <%= f.collection_select :username, User.order(:username), :username, :username, { include_blank: false}, { class: "form-control" } %></p>

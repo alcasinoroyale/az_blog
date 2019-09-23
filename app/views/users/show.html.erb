@@ -4,7 +4,8 @@
   <h1><%= @user.username %></h1>
   <h3><%= @user.posts.count %> Posts</h3>
 
-  <div class="info">
+  <div class="user-info">
+    <h4>Started Blogging: <%= @user.created_at.strftime("%B %d, %Y") %></h4>
     <h4><%= @user.bio %></h4>
     <h4>Based in <%= @user.location %></h4>
     <h4>Interests: <%= @user.interests %></h4>
@@ -16,10 +17,8 @@
   <% end %>
   <div class="user-posts">
     <h3><%= @user.username %>'s Posts</h3>
-    <ol>
       <% @user.posts.each do |post| %>
-        <li><%= link_to post.title, post_path(post) %></li>
+        <h4 class="user-posts-list"><%= link_to post.title, post_path(post) %></h4>
       <% end %>
-    </ol>
   </div>
 </div>
