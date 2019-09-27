@@ -9,6 +9,13 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+
+    <div>
+      <% if flash[:message] %>
+        <p><%= flash[:message] %></p>
+      <% end %>
+    </div>
+
     <%= render 'layouts/navigation' %>
     <%= yield %>
   </body>
