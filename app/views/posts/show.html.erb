@@ -15,6 +15,7 @@
     <% @post.comments.each do |comment| %>
       <%= comment.user.username %> commented <%= comment.body %> on
       <%= comment.created_at.strftime("%B %d, %Y") %>
+      <%= link_to 'Delete Comment', post_comment_path, :class => 'submit-button' %>
     <% end %>
   <% else %>
   <h4>Login to see comments</h4>
