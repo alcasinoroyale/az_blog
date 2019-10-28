@@ -5,12 +5,13 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= javascript_include_tag 'https://kit.fontawesome.com/a076d05399.js' %>
     <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
 
-    <div>
+    <div class="message">
       <% if flash[:message] %>
         <p><%= flash[:message] %></p>
       <% end %>

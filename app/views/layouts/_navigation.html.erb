@@ -1,11 +1,12 @@
 <nav class="navbar">
   <div class="home">
-    <%= link_to "AZ Blog", root_path %>
+    <%= link_to root_path do %><i class="fa fa-paragraph"></i> AZ.blog<% end %>
   </div>
 
-  <div class="nav-links">
     <%= link_to "Users", users_path %>
     <%= link_to "Posts", posts_path %>
+
+  <div class="navbar-right">
     <% if logged_in? %>
       <%= link_to "Create Post", new_post_path %>
       <%= link_to "Profile", user_path(current_user) %>
