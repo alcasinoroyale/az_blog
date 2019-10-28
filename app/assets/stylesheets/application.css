@@ -118,6 +118,19 @@ a {
   color: #00668f;
 }
 
+.categories {
+  background-color: #1a1a1a;
+  text-align: center;
+  height: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.all-categories {
+  background-color: #bfbfbf;
+  color: #000;
+}
+
 .form-control {
   height: 22px;
   width: 180px;

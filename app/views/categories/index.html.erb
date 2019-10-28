@@ -1,0 +1,16 @@
+<div class="categories">
+  <h2>Inside the Writers Corner</h2>
+</div>
+
+<table class="all-categories" align="center" width="60%">
+    <tr>
+      <th>Category</th>
+      <th>Posts</th>
+    </tr>
+    <% @category.each do |category| %>
+      <tr>
+        <td><h3> <%= category.name %></h3><%= category.description %></td>
+        <td><%= category.posts.count %></td>
+      </tr>
+    <% end %>
+</table>
