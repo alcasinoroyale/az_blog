@@ -35,6 +35,12 @@ body {
   border-radius: 4px;
 }
 
+.posts_image {
+  max-width: 500px;
+  height: auto;
+  border-radius: 4px;
+}
+
 .navbar {
   position: fixed;
   overflow: hidden;
@@ -85,8 +91,8 @@ a {
 
 .user-profile, .all-users, .post-container, .posts-index {
   margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 150px;
+  margin-right: 150px;
   background-color: #1a1a1a;
   padding: 20px;
   border-radius: 4px;
