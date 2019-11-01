@@ -89,7 +89,7 @@ a {
   border: 1px solid #404040;
 }
 
-.user-profile, .all-users, .post-container, .posts-index {
+.user-profile, .all-users, .post-container, .posts-index, .categories-show {
   margin-top: 20px;
   margin-left: 150px;
   margin-right: 150px;
