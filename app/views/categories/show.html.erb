@@ -1,8 +1,15 @@
 <div class="categories-show">
 <h1> <%= @category.name %> </h1>
+<table class="category-post" align="center" width="60%">
+    <th>Post</th>
+    <th>Created By</th>
+    <th>Published On</th>
   <% @category.posts.each do |post| %>
-    <h3><%= post.title %></h3>
-    <p>Created By <%= post.user.username %></p>
-    <p>Published On <%= post.created_at.strftime("%B %d, %Y") %></p>
+    <tr>
+      <td><p><%= link_to post.title, post %></p></td>
+      <td><p><%= post.user.username %></p></td>
+      <td><p><%= post.created_at.strftime("%B %d, %Y") %></p></td>
+    </tr>
   <% end %>
+</table>
 </div>
