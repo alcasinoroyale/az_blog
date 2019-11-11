@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'pry'
 gem "font-awesome-rails"
+
+gem "loofah", ">= 2.3.1"
+gem "rubyzip", ">= 1.3.0"
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
