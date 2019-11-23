@@ -6,11 +6,15 @@
     <tr>
       <th>Category</th>
       <th>Posts</th>
+      <th>Latest Post</th>
     </tr>
     <% @category.each do |category| %>
       <tr>
-        <td><h3> <%= link_to category.name, category %></h3><%= category.description %></td>
+        <td><h3><i class="fas fa-book"></i> <%= link_to category.name, category %></h3><%= category.description %></td>
         <td><%= category.posts.count %></td>
+        <% category.posts.each do |post| %>
+            <td><%= link_to post.title, post %></td>
+          <% end %>
       </tr>
     <% end %>
 </table>
