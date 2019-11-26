@@ -18,6 +18,8 @@
   *= require font-awesome
   */
 
+/* Text */
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #173240;
@@ -41,6 +43,8 @@ body {
   border-radius: 4px;
 }
 
+/* Nav */
+
 .navbar {
   position: fixed;
   overflow: hidden;
@@ -61,6 +65,12 @@ body {
   font-size: 18px;
 }
 
+.navbar-right {
+  float: right;
+}
+
+/* Links */
+
 a {
   text-decoration: none;
 }
@@ -76,9 +86,32 @@ a {
   font-weight: bold;
 }
 
-.navbar-right {
-  float: right;
+.user-posts-list a, h4 a {
+    color: #00668f;
 }
+
+.all-users a {
+  color: #f0f0f0;
+}
+
+.all-posts td a{
+  color: #f0f0f0;
+}
+
+.all-posts th a{
+  padding-left: 20px;
+  color: #00668f;
+}
+
+.all-categories td a {
+  color: #00668f;
+}
+
+.category-post a {
+  color: #00668f;
+}
+
+/* Templates */
 
 .create-user, .create-post, .login {
   margin-top: 20px;
@@ -100,24 +133,6 @@ a {
   text-align: center;
 }
 
-.all-users a {
-  color: #f0f0f0;
-}
-
-.all-users h3 {
-  display: inline;
-  padding: 30px;
-}
-
-.all-posts td a{
-  color: #f0f0f0;
-}
-
-.all-posts th a{
-  padding-left: 20px;
-  color: #00668f;
-}
-
 .categories {
   background-color: #1a1a1a;
   text-align: center;
@@ -131,13 +146,12 @@ a {
   color: #000;
 }
 
-.all-categories td a {
-  color: #00668f;
+.all-users h3 {
+  display: inline;
+  padding: 30px;
 }
 
-.category-post a {
-  color: #00668f;
-}
+/* Forms and Tables */
 
 .form-control {
   height: 22px;
@@ -175,8 +189,4 @@ a {
 
 .user-posts {
   margin-top: 30px;
-}
-
-.user-posts-list a, h4 a {
-  color: #00668f;
 }
