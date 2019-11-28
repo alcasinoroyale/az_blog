@@ -28,7 +28,7 @@ body {
 /* Navbar */
 
 .navbar {
-  background: #333;
+  background: #1a1a1a;
   overflow: hidden;
 }
 
@@ -75,7 +75,6 @@ body {
   .navbar.responsive a {
     float: none;
     display: block;
-    border: 1px solid #282828;
     text-align: left;
   }
 
@@ -94,13 +93,14 @@ body {
 
 .home_image {
   max-width: 700px;
-  width: 95%;
+  width: 80%;
   height: auto;
   border-radius: 4px;
 }
 
 .posts_image {
   max-width: 500px;
+  width: 95%;
   height: auto;
   border-radius: 4px;
 }
@@ -109,4 +109,116 @@ body {
 
 .homepage {
   margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.user-posts-list a, h4 a {
+  color: #00668f;
+}
+
+.create-user, .create-post, .login {
+  margin-top: 20px;
+  max-width: 40%;
+  width: 40%;
+  margin-left: 50px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #404040;
+}
+
+.user-profile, .all-users, .post-container, .posts-index, .categories-show {
+  margin-top: 20px;
+  max-width: 100%;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Tables */
+
+.all-users a {
+  color: #f0f0f0;
+}
+
+.all-users h3 {
+  display: inline;
+  padding: 30px;
+}
+
+.all-posts td a{
+  color: #f0f0f0;
+}
+
+.all-posts th a{
+  padding-left: 20px;
+  color: #00668f;
+}
+
+.all-categories td a {
+  color: #00668f;
+}
+
+.all-categories {
+  background-color: #f8f8f8;
+  color: #1a1a1a;
+}
+
+.fa-book {
+  color: #1a1a1a;
+}
+
+.categories {
+  background-color: #1a1a1a;
+  text-align: center;
+  height: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.category-post a {
+  color: #00668f;
+}
+
+#users-list th {
+  color: #00668f;
+}
+
+.user-posts {
+  margin-top: 30px;
+}
+
+/* Forms */
+
+.form-control {
+  height: 22px;
+  width: 180px;
+  font-size: 14px;
+}
+
+.post-control {
+  width: 250px;
+  height: 28px;
+  font-size: 16px;
+}
+
+.form-area {
+  height: 100px;
+  width: 400px;
+  max-width: 400px;
+  font-size: 14px;
+}
+
+.submit-button {
+  background: #0066A2;
+  color: #f5f5f5;
+  border-style: outset;
+  border-color: #0066A2;
+  border-radius: 2px;
+  font-size: 15px;
+  height: 50px;
+  width: 100px;
 }
