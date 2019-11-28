@@ -131,9 +131,12 @@ a {
 }
 
 .user-profile, .all-users, .post-container, .posts-index, .categories-show {
-  margin-top: 20px;
-  max-width: 100%;
-  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 6px;
+  width: 70%;
+  background-color: #262626;
+  border: 1px solid #333;
   padding: 20px;
   text-align: center;
 }
