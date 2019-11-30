@@ -115,6 +115,10 @@ a {
   text-decoration: none;
 }
 
+.links {
+  color: #00668f;
+}
+
 .user-posts-list a, h4 a {
   color: #00668f;
 }
@@ -197,10 +201,10 @@ a {
 /* Forms */
 
 .form-control {
-  height: 22px;
+  height: 30px;
   width: 200px;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 15px;
   border: 2px solid #333;
 }
 
@@ -220,10 +224,13 @@ a {
 .submit-button {
   background: #0066A2;
   color: #f5f5f5;
-  border-radius: 10px;
+  border-radius: 6px;
   border-color: #0066A2;
-  font-size: 14px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-transform: uppercase;
   height: 50px;
+  width: 200px;
 }
 
 .submit-button:hover {

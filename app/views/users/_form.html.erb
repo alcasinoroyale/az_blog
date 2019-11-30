@@ -4,6 +4,10 @@
   <p><%= f.label :password %><br><%= f.password_field :password, :class => 'form-control' %></p>
   <%= f.submit :class => 'submit-button' %>
 
+  <% if !logged_in? %>
+    <p>Already have an account? <%= link_to "Log In", login_path, :class => 'links' %></p>
+  <% end %>
+  
   <div class="message">
     <% if @user.errors.any? %>
     <% @user.errors.full_messages.each do |message| %>
